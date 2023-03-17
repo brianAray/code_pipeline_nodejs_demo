@@ -2,7 +2,7 @@ version: 0.0
 os: linux 
 files:
   - source: /
-    destination: /home/ec2-user/nodejs-aws-codedeploy-pipeline
+    destination: /home/ec2-user/code_pipeline_nodejs_demo
 hooks:
   AfterInstall:
     - location: scripts/after_install.sh
