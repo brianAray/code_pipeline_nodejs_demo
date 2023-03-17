@@ -4,7 +4,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 18  
+      nodejs: 16  
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
@@ -12,10 +12,10 @@ phases:
   build:
     commands:
       - echo Building the Node.js App...
-      - npm run build
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
     - index.js
+    - node_modules/**/*
